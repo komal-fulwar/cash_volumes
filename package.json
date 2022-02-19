@@ -1,0 +1,18 @@
+{
+  "name": "cash_volumes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.0.22"
+  },
+  "devDependencies": {
+    "stylelint-config-recommended": "^7.0.0"
+  }
+}
