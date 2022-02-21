@@ -14,13 +14,15 @@
 <body class="antialiased bg-body text-body font-body" >
 
 <!-- Section 1 -->
-<section>
-  <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-900">
-    <a class="text-white text-3xl font-bold leading-none" href="#" data-config-id="brand">
-      <img class="h-12" src="atis-assets/logo/atis/atis-color-white.svg" alt="" width="auto">
+
+<section class="relative overflow-hidden">
+  <img class="hidden lg:block absolute inset-0 w-full" src="atis-assets/background/lines.svg" alt="">
+  <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+    <a class="text-3xl font-bold leading-none" href="#" data-config-id="brand">
+      <img class="h-12" src="atis-assets/logo/atis/atis-color-black.svg" alt="" width="auto">
     </a>
     <div class="lg:hidden">
-      <button class="navbar-burger flex items-center text-white p-3">
+      <button class="navbar-burger flex items-center text-gray-400 p-3">
         <svg class="block h-4 w-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Mobile menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
@@ -28,58 +30,58 @@
       </button>
     </div>
     <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-      <li><a class="text-sm text-gray-300 hover:text-white" href="#" data-config-id="link1">Start</a></li>
+      <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link1">Home</a></li>
       <li class="text-gray-800">
         <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
         </svg>
       </li>
-      <li><a class="text-sm text-white font-bold" href="#" data-config-id="link2">About Us</a></li>
+      <li><a class="text-sm text-green-600 font-bold" href="#" data-config-id="link2">Services</a></li>
       <li class="text-gray-800">
         <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
         </svg>
       </li>
-      <li><a class="text-sm text-gray-300 hover:text-white" href="#" data-config-id="link3">Services</a></li>
+      <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link3">Trade With Us</a></li>
       <li class="text-gray-800">
         <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
         </svg>
       </li>
-      <li><a class="text-sm text-gray-300 hover:text-white" href="#" data-config-id="link4">Platform</a></li>
+      <li><a class="text-sm text-gray-400 hover:text-gray-500" href="faq.html" data-config-id="link4">FAQ</a></li>
       <li class="text-gray-800">
         <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
         </svg>
       </li>
-      <li><a class="text-sm text-gray-300 hover:text-white" href="#" data-config-id="link5">Testimonials</a></li>
+      <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link5">Testimonials</a></li>
     </ul>
-    <a class="hidden lg:inline-block py-2 px-6 bg-pink-500 hover:bg-pink-600 text-sm text-white font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action-nav">Contact Us</a>
+    <a class="hidden lg:block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action-nav">Contact Us</a>
   </nav>
-  <div class="bg-gray-900 pt-12 lg:pt-20 pb-12 md:pb-24">
+  <div class="relative bg-gray-50 pt-12 lg:pt-20 pb-12 md:pb-24">
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-12 md:mb-20 lg:mb-0 flex items-center">
           <div class="w-full text-center lg:text-left">
-            <div class=" mx-auto lg:mx-0">
-              <h2 class="mb-3 text-4xl lg:text-5xl text-white font-bold">
+            <div class="max-w-md mx-auto lg:mx-0">
+              <h2 class="mb-3 text-4xl lg:text-5xl font-bold font-heading">
                 <span data-config-id="header-p1">Build &amp; Launch without</span>
                 <span class="text-purple-600" data-config-id="header-p2">problems</span>
               </h2>
             </div>
             <div class="max-w-sm mx-auto lg:mx-0">
               <p class="mb-6 text-gray-400 leading-loose" data-config-id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
-              <div><a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action-hero">Get Started</a><a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose text-white font-semibold bg-gray-900 border-2 border-gray-700 hover:border-gray-600 rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="secondary-action-hero">How it works</a></div>
+              <div><a class="inline-block mb-3 lg:mb-0 lg:mr-3 w-full lg:w-auto py-2 px-6 leading-loose bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action-hero">Get Started</a><a class="inline-block w-full lg:w-auto py-2 px-6 leading-loose font-semibold bg-white hover:bg-gray-50 rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="secondary-action-hero">How it works</a></div>
             </div>
           </div>
         </div>
         <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
           <div class="relative" style="z-index: 0;">
-            <img class="h-128 w-full max-w-lg object-cover rounded-3xl md:rounded-br-none" src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="" data-config-id="image1">
-            <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;" src="atis-assets/elements/blue-up.svg" alt="">
-            <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;" src="atis-assets/elements/wing-purple-down.svg" alt="">
-            <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;" src="atis-assets/elements/bullets-dark-right.svg" alt="">
-            <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;" src="atis-assets/elements/bullets-yellow-left.svg" alt="">
+            <img class="   rounded-3xl md:rounded-br-none" src="dollar-dynamic-premium.png" alt="" data-config-id="image1">
+            <img class="hidden md:block absolute" style="top:-2rem; right: 3rem; z-index: -1;" src="atis-assets/elements/purple-up.svg" alt="">
+            <img class="hidden md:block absolute" style="bottom:-2rem; right: -2rem; z-index: -1;" src="atis-assets/elements/wing-yellow-down.svg" alt="">
+            <img class="hidden md:block absolute" style="top:3rem; right: -3rem; z-index: -1;" src="atis-assets/elements/bullets-gray-right.svg" alt="">
+            <img class="hidden md:block absolute" style="bottom:2.5rem; left: -4.5rem; z-index: -1;" src="atis-assets/elements/bullets-gray-left.svg" alt="">
           </div>
         </div>
       </div>
@@ -100,15 +102,15 @@
       </div>
       <div>
         <ul>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link1">Start</a></li>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link2">About Us</a></li>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link3">Services</a></li>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link4">Platform</a></li>
-          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link5">Testimonials</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link1">Home</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link2">Services</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link3">Trade with us</a></li>
+          <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link4">FAQ</a></li>
+         
         </ul>
       </div>
       <div class="mt-auto">
-        <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#" data-config-id="secondary-action">Sign In</a><a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-pink-600 hover:bg-pink-700 rounded-l-xl rounded-t-xl" href="#" data-config-id="primary-action">Sign Up</a></div>
+        <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#" data-config-id="secondary-action">Sign In</a><a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl" href="#" data-config-id="primary-action">Sign Up</a></div>
         <p class="my-4 text-xs text-center text-gray-400">
           <span data-config-id="copy">&copy; 2020 All rights reserved.</span>
         </p>
@@ -127,98 +129,67 @@
     </nav>
   </div>
 </section>
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-    <div>
-      <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-        Brand new
-      </p>
-    </div>
-    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-      <span class="relative inline-block">
-        <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-          <defs>
-            <pattern id="27df4f81-c854-45de-942a-fe90f7a300f9" x="0" y="0" width=".135" height=".30">
-              <circle cx="1" cy="1" r=".7"></circle>
-            </pattern>
-          </defs>
-          <rect fill="url(#27df4f81-c854-45de-942a-fe90f7a300f9)" width="52" height="24"></rect>
-        </svg>
-        <span class="relative">The</span>
-      </span>
-      quick, brown fox jumps over a lazy dog
-    </h2>
-    <p class="text-base text-gray-700 md:text-lg">
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
-    </p>
+
+<section data-config-id="background">
+  <div class="skew skew-top mr-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+    </svg>
   </div>
-  <div class="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
-    <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-      <div class="mr-4">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
+  <div class="skew skew-top ml-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+    </svg>
+  </div>
+  <div class="py-20 bg-gray-900 radius-for-skewed">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+          <div class="max-w-md">
+            <span class="text-yellow-500 font-bold" data-config-id="caption">Dolor sit amet consectutar</span>
+            <h2 class="mb-2 text-4xl lg:text-5xl font-bold font-heading text-white" data-config-id="header">Build &amp; Launch without problems</h2>
+            <div class="max-w-xs">
+              <p class="text-gray-500 leading-loose" data-config-id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <h6 class="mb-3 text-xl font-bold leading-5">The deep ocean</h6>
-        <p class="mb-3 text-sm text-gray-900">
-          A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear. We never had the chance to.
-        </p>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
-      </div>
-    </div>
-    <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-      <div class="mr-4">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
+        <div class="w-full lg:w-1/2">
+          <div class="mb-12 lg:mb-8 flex flex-wrap items-start">
+            <span class="mb-4 lg:mb-0 lg:mr-6 inline-flex items-center justify-center w-16 h-16 bg-deep-purple-accent-400 rounded text-white text-2xl font-bold">1</span>
+            <div class="w-full lg:w-3/4">
+              <h3 class="mb-4 text-2xl font-bold font-heading text-white" data-config-id="header1">Lorem ipsum dolor sit amet consectutar</h3>
+              <p class="text-gray-500 leading-loose" data-config-id="desc1">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+            </div>
+          </div>
+          <div class="mb-12 lg:mb-8 flex flex-wrap items-start">
+            <span class="mb-4 lg:mb-0 lg:mr-6 inline-flex items-center justify-center w-16 h-16 bg-deep-purple-accent-400 rounded text-white text-2xl font-bold">2</span>
+            <div class="w-full lg:w-3/4">
+              <h3 class="mb-4 text-2xl font-bold font-heading text-white" data-config-id="header2">Lorem ipsum dolor sit amet consectutar</h3>
+              <p class="text-gray-500 leading-loose" data-config-id="desc2">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-start">
+            <span class="mb-4 lg:mb-0 lg:mr-6 inline-flex items-center justify-center w-16 h-16 bg-deep-purple-accent-400 rounded text-white text-2xl font-bold">3</span>
+            <div class="w-full lg:w-3/4">
+              <h3 class="mb-4 text-2xl font-bold font-heading text-white" data-config-id="header3">Lorem ipsum dolor sit amet consectutar</h3>
+              <p class="text-gray-500 leading-loose" data-config-id="desc3">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <h6 class="mb-3 text-xl font-bold leading-5">When has justice</h6>
-        <p class="mb-3 text-sm text-gray-900">
-          Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea robin Antarctic cod. Yellow-and-black triplefin gulper South American Lungfish mahi-mahi, butterflyfish glass catfish soapfish ling gray mullet!
-        </p>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
-      </div>
-    </div>
-    <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-      <div class="mr-4">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
-        </div>
-      </div>
-      <div>
-        <h6 class="mb-3 text-xl font-bold leading-5">Organically grow</h6>
-        <p class="mb-3 text-sm text-gray-900">
-          A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker. Meanwhile, in behind the bicycle shed, Hercules Morse, as big as a horse and Mrs Falani were up to no good with a bunch of crook pikelets.
-        </p>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
-      </div>
-    </div>
-    <div class="flex flex-col max-w-md sm:mx-auto sm:flex-row">
-      <div class="mr-4">
-        <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-          <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-            <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-          </svg>
-        </div>
-      </div>
-      <div>
-        <h6 class="mb-3 text-xl font-bold leading-5">A slice of heaven</h6>
-        <p class="mb-3 text-sm text-gray-900">
-          Disrupt inspire and think tank, social entrepreneur but preliminary thinking think tank compelling. Inspiring, invest synergy capacity building, white paper; silo, unprecedented challenge B-corp problem-solvers.
-        </p>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
       </div>
     </div>
   </div>
-</div>
+  <div class="skew skew-bottom mr-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+    </svg>
+  </div>
+  <div class="skew skew-bottom ml-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+    </svg>
+  </div>
+</section>
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
@@ -297,43 +268,65 @@
     </div>
   </div>
 </div>
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
-    <div class="relative lg:w-1/2">
-      <img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" class="object-cover w-full lg:absolute h-80 lg:h-full" />
-      <svg class="absolute top-0 right-0 hidden h-full text-white lg:inline-block" viewBox="0 0 20 104" fill="currentColor">
-        <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"></polygon>
-      </svg>
-    </div>
-    <div class="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-      <div>
-        <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-          Brand new
-        </p>
-      </div>
-      <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-        Your new ideal style
-      </h5>
-      <p class="mb-5 text-gray-800">
-        <span class="font-bold">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Etiam sem neque, molestie sit amet venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend, sed consequat odio sollicitudin.
-      </p>
-      <div class="flex items-center">
-        <button
-          type="submit"
-          class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-        >
-          Get started
-        </button>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-          Learn More
-          <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-          </svg>
-        </a>
+
+<section data-config-id="background">
+  <div class="skew skew-top mr-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+    </svg>
+  </div>
+  <div class="skew skew-top ml-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+    </svg>
+  </div>
+  <div class="py-20 bg-gray-900 radius-for-skewed">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="mb-12 lg:mb-0 w-full lg:w-1/2 flex px-4">
+          <div class="max-w-md">
+            <span class="text-purple-600 font-bold" data-config-id="badge">Dolor sit amet consectutar</span>
+            <h2 class="mb-6 text-4xl lg:text-5xl font-bold font-heading text-white" data-config-id="header">Build &amp; Launch without problems</h2>
+            <div class="mb-6 max-w-sm">
+              <p class="text-gray-500 leading-loose" data-config-id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+            </div>
+            <div class="flex flex-wrap lg:-ml-5">
+              <button class="inline-button lg:w-auto py-2 px-6 leading-loose lg:ml-5 text-gray-50 font-bold bg-purple-600 hover:bg-purple-700 transition duration-200 rounded-l-xl rounded-t-xl" data-config-id="primary-action">Get Started</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <div class="mb-4 flex flex-wrap items-end">
+            <div class="mb-4 lg:mb-0 w-full lg:w-2/3 px-3">
+              <img class="w-full h-32 lg:h-48 object-cover rounded" src="https://images.unsplash.com/photo-1604701145653-ab3c97c63467?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80" alt="" data-config-id="image1">
+            </div>
+            <div class="w-full lg:w-1/3 px-3">
+              <img class="w-full h-32 object-cover rounded" src="https://images.unsplash.com/photo-1521581171443-58a6b508b9ac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="" data-config-id="image2">
+            </div>
+          </div>
+          <div class="flex flex-wrap items-start">
+            <div class="mb-4 lg:mb-0 w-full lg:w-1/3 px-3">
+              <img class="w-full h-32 object-cover rounded" src="https://images.unsplash.com/photo-1501706649056-3cb79cccec52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=701&amp;q=80" alt="" data-config-id="image3">
+            </div>
+            <div class="w-full lg:w-2/3 px-3">
+              <img class="w-full h-32 lg:h-48 object-cover rounded" src="https://images.unsplash.com/photo-1489058535093-8f530d789c3b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" alt="" data-config-id="image4">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <div class="skew skew-bottom mr-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+    </svg>
+  </div>
+  <div class="skew skew-bottom ml-for-radius">
+    <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-900" viewbox="0 0 10 10" preserveaspectratio="none">
+      <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+    </svg>
+  </div>
+</section>
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <div class="flex flex-col bg-white border rounded shadow-sm md:justify-center lg:flex-row">
     <div class="flex flex-col justify-between p-5 border-b sm:p-10 lg:border-b-0 lg:border-r lg:w-1/2">
@@ -424,7 +417,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 flex flex-wrap -mx-4">
+        <div class=" lg:w-1/2 flex flex-wrap -mx-4">
           <div class="mb-8 lg:mb-0 w-full md:w-1/2 px-4">
             <div class="mb-8 py-6 pl-6 pr-4 shadow-md rounded bg-gray-800">
               <span class="mb-4 inline-block p-3 rounded-lg bg-yellow-800">
@@ -434,6 +427,7 @@
               </span>
               <h4 class="mb-2 text-2xl font-bold font-heading text-white" data-config-id="header1">Lorem ipsum dolor sit amet</h4>
               <p class="text-gray-500 leading-loose" data-config-id="desc1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="sub.html"><button class=" lg:w-auto py-2 px-6 leading-loose lg:ml-5 text-purple-700 font-bold  hover:text-gray-50 transition duration-200 rounded-l-xl rounded-t-xl" data-config-id="primary-action">Get Started</button></a>
             </div>
             <div class="py-6 pl-6 pr-4 shadow-md rounded bg-gray-800">
               <span class="mb-4 inline-block p-3 rounded-lg bg-pink-800">
@@ -443,6 +437,7 @@
               </span>
               <h4 class="mb-2 text-2xl font-bold font-heading text-white" data-config-id="header2">Lorem ipsum dolor sit amet</h4>
               <p class="text-gray-500 leading-loose" data-config-id="desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="teaching.html"><button class=" lg:w-auto py-2 px-6 leading-loose lg:ml-5 text-purple-700 font-bold  hover:text-gray-50 transition duration-200 rounded-l-xl rounded-t-xl" data-config-id="primary-action">Get Started</button></a>
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:mt-20 px-4">
@@ -454,6 +449,7 @@
               </span>
               <h4 class="mb-2 text-2xl font-bold font-heading text-white" data-config-id="header3">Lorem ipsum dolor sit amet</h4>
               <p class="text-gray-500 leading-loose" data-config-id="desc3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class=" lg:w-auto py-2 px-6 leading-loose lg:ml-5 text-purple-700 font-bold  hover:text-gray-50 transition duration-200 rounded-l-xl rounded-t-xl" data-config-id="primary-action">Get Started</button>
             </div>
             <div class="py-6 pl-6 pr-4 shadow-md rounded-lg bg-gray-800">
               <span class="mb-4 inline-block p-3 rounded bg-purple-800">
@@ -464,6 +460,7 @@
               </span>
               <h4 class="mb-2 text-2xl font-bold font-heading text-white" data-config-id="header4">Lorem ipsum dolor sit amet</h4>
               <p class="text-gray-500 leading-loose" data-config-id="desc4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <button class=" lg:w-auto py-2 px-6 leading-loose lg:ml-5 text-purple-700 font-bold  hover:text-gray-50 transition duration-200 rounded-l-xl rounded-t-xl" data-config-id="primary-action">Get Started</button>
             </div>
           </div>
         </div>
@@ -482,26 +479,21 @@
   </div>
 </section>
 
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-  <div class="p-8 rounded shadow-xl sm:p-16">
-    <div class="flex flex-col lg:flex-row">
-      <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-        <h2 class="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-          The quick, brown fox<br class="hidden md:block" />
-          jumps over
-          <span class="inline-block text-deep-purple-accent-400">a lazy dog</span>
-        </h2>
+
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-center -mx-4">
+      <div class="w-full lg:w-1/2 px-4 order-1 lg:order-0">
+        <h2 class="mb-4 text-4xl md:text-5xl font-bold font-heading" data-config-id="header">So much more than a business analytics tool</h2>
+        <p class="mb-8 text-gray-500 leading-loose" data-config-id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur nisl sodales egestas lobortis.</p>
+        <a class="inline-block py-2 px-6 bg-purple-600 hover:bg-purple-700 text-white font-bold leading-loose rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action">Get Started</a>
       </div>
-      <div class="lg:w-1/2">
-        <p class="mb-4 text-base text-gray-700">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut perspiciatis unde omnis iste. Sed ut perspiciatis unde omnis iste error sit voluptatem accusantium
-          doloremque rem aperiam.
-        </p>
-        <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+      <div class="w-full lg:w-1/2 px-4 order-0 lg:order-1 mb-8 lg:mb-0">
+        <img src="atis-assets/illustrations/pablo-coming-soon-light-color.png" alt="" data-config-id="image">
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="bg-gray-900">
   <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">

@@ -4,169 +4,205 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tails Downloaded File</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
-    <link rel="stylesheet" href="styles.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
+    <script src="js/main.js"></script>
+   
 </head>
 <body>
 
-<!-- Section 1 -->
-<div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-  <div class="relative flex items-center justify-between">
-    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-      <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-        <rect x="3" y="1" width="7" height="12"></rect>
-        <rect x="3" y="17" width="7" height="6"></rect>
-        <rect x="14" y="1" width="7" height="6"></rect>
-        <rect x="14" y="11" width="7" height="12"></rect>
+  <section class="relative overflow-hidden">
+    <img class="hidden lg:block absolute inset-0 w-full" src="atis-assets/background/lines.svg" alt="">
+    <nav class="relative px-6 py-6 flex justify-between items-center bg-gray-50">
+      <a class="text-3xl font-bold leading-none" href="#" data-config-id="brand">
+        <img class="h-12" src="atis-assets/logo/atis/atis-color-black.svg" alt="" width="auto">
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-gray-400 p-3">
+          <svg class="block h-4 w-4 fill-current" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Mobile menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link1">Home</a></li>
+        <li class="text-gray-800">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-green-600 font-bold" href="#" data-config-id="link2">Services</a></li>
+        <li class="text-gray-800">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link3">Trade With Us</a></li>
+        <li class="text-gray-800">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="faq.html" data-config-id="link4">FAQ</a></li>
+        <li class="text-gray-800">
+          <svg class="w-4 h-4 current-fill" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path>
+          </svg>
+        </li>
+        <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#" data-config-id="link5">Testimonials</a></li>
+      </ul>
+      <a class="hidden lg:block py-2 px-6 bg-white hover:bg-gray-50 text-sm text-purple-600 font-bold rounded-l-xl rounded-t-xl transition duration-200" href="#" data-config-id="primary-action-nav">Contact Us</a>
+    </nav>
+  
+    <div class="hidden navbar-menu relative z-50">
+      <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+      <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="#" data-config-id="brand">
+            <img class="h-10" src="atis-assets/logo/atis/atis-color-black.svg" alt="" width="auto">
+          </a>
+          <button class="navbar-close">
+            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <ul>
+            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link1">Home</a></li>
+            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link2">Services</a></li>
+            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link3">Trade with us</a></li>
+            <li class="mb-1"><a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-purple-50 hover:text-purple-600 rounded" href="#" data-config-id="link4">FAQ</a></li>
+           
+          </ul>
+        </div>
+        <div class="mt-auto">
+          <div class="pt-6"><a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-l-xl rounded-t-xl" href="#" data-config-id="secondary-action">Sign In</a><a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-purple-600 hover:bg-purple-700 rounded-l-xl rounded-t-xl" href="#" data-config-id="primary-action">Sign Up</a></div>
+          <p class="my-4 text-xs text-center text-gray-400">
+            <span data-config-id="copy">&copy; 2020 All rights reserved.</span>
+          </p>
+          <div class="text-center">
+            <a class="inline-block px-1" href="#">
+              <img src="atis-assets/social/facebook-purple.svg" alt="">
+            </a>
+            <a class="inline-block px-1" href="#">
+              <img src="atis-assets/social/twitter-purple.svg" alt="">
+            </a>
+            <a class="inline-block px-1" href="#">
+              <img src="atis-assets/social/instagram-purple.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <section data-config-id="background">
+    <div class="skew skew-top mr-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none">
+        <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
       </svg>
-      <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
-    </a>
-    <ul class="flex items-center hidden space-x-8 lg:flex">
-      <li><a href="index.html" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
-      <li><a href="services.html" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Services</a></li>
-      <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Trade With Us</a></li>
-      <li><a href="faq.html" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">FAQ<a></li>
-      
-      <li>
-        <a style="color: black; background-color: yellow;"
-          href="/"
-          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  focus:shadow-outline focus:outline-none"
-          aria-label="Sign up"
-          title="Sign up"
-        >Join Us
-        </a>
-      </li>
-    </ul>
-    <!-- Mobile menu -->
-    <div class="lg:hidden">
-      <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50">
-        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-          <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
-          <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-        </svg>
-      </button>
-      <!-- Mobile menu dropdown 
-      <div class="absolute top-0 left-0 w-full">
-        <div class="p-5 bg-white border rounded shadow-sm">
-          <div class="flex items-center justify-between mb-4">
-            <div>
-              <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-                  <rect x="3" y="1" width="7" height="12"></rect>
-                  <rect x="3" y="17" width="7" height="6"></rect>
-                  <rect x="14" y="1" width="7" height="6"></rect>
-                  <rect x="14" y="11" width="7" height="12"></rect>
-                </svg>
-                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
-              </a>
-            </div>
-            <div>
-              <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                  ></path>
+    </div>
+    <div class="skew skew-top ml-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none">
+        <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+      </svg>
+    </div>
+    <div class="py-20 bg-gray-50 radius-for-skewed">
+      <div class="container mx-auto px-4">
+        <div class="mb-16 max-w-xl mx-auto text-center">
+          <span class="text-purple-600 font-bold font-heading" data-config-id="caption">Dolor sit amet consectutar</span>
+          <h2 class="mb-6 text-5xl font-bold font-heading" data-config-id="header">Frequently Asked Questions</h2>
+          <form class="flex justify-center">
+            <input class="w-2/3 p-4 text-xs font-heading bg-white focus:border-gray-500 focus:outline-none rounded-l" placeholder="Search, find any question you want to ask...">
+            <button class="pr-4 rounded-r-lg bg-white text-pink-600">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <div class="mb-16 flex justify-center space-x-4">
+          <button class="inline-block h-2 w-2 bg-purple-600 rounded-full"></button>
+          <button class="inline-block h-2 w-2 bg-purple-600 rounded-full"></button>
+          <button class="inline-block h-2 w-2 bg-purple-600 rounded-full"></button>
+          <button class="inline-block h-2 w-2 bg-purple-600 rounded-full"></button>
+          <button class="inline-block h-2 w-2 bg-purple-600 rounded-full"></button>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <ul class="space-y-4 lg:space-y-6">
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q1">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
                 </svg>
               </button>
-            </div>
-          </div>
-          <nav>
-            <ul class="space-y-4">
-              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
-              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
-              <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
-              <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
-              <li>
-                <a
-                  href="/"
-                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                  aria-label="Sign up"
-                  title="Sign up"
-                >
-                  Sign up
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      -->
-    </div>
-  </div>
-</div>
-
-
-
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-        <div><p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">Brand new</p></div>
-        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-          <span class="relative inline-block">
-            <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-              <defs>
-                <pattern id="f77828ea-acc7-4b05-89fe-052b4c6b68b2" x="0" y="0" width=".135" height=".30"><circle cx="1" cy="1" r=".7"></circle></pattern>
-              </defs>
-              <rect fill="url(#f77828ea-acc7-4b05-89fe-052b4c6b68b2)" width="52" height="24"></rect>
-            </svg>
-            <span class="relative">The</span>
-          </span>
-          quick, brown fox jumps over a lazy dog
-        </h2>
-        <p class="text-base text-gray-700 md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p>
-      </div>
-      <div class="space-y-4">
-        <div class="border-b">
-          <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4 focus:outline-none">
-            <p class="text-lg font-medium">The quick, brown fox jumps over a lazy dog?</p>
-            <!-- Add "transform rotate-180" classes on svg, if is open" -->
-            <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200">
-              <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-            </svg>
-          </button>
-          <!-- Show content if is open 
-          <div class="p-4 pt-0"><p class="text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p></div>
-          -->
-        </div>
-        <div class="border-b">
-          <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4 focus:outline-none">
-            <p class="text-lg font-medium">The first mate and his Skipper too will do?</p>
-            <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform rotate-180">
-              <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-            </svg>
-          </button>
-          <!-- Show content if is open 
-          <div class="p-4 pt-0"><p class="text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p></div>
-          -->
-        </div>
-        <div class="border-b">
-          <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4 focus:outline-none">
-            <p class="text-lg font-medium">Is the Space Pope reptilian!?</p>
-            <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform rotate-180">
-              <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-            </svg>
-          </button>
-          <!-- Show content if is open 
-          <div class="p-4 pt-0"><p class="text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p></div>
-          -->
-        </div>
-        <div class="border-b">
-          <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4 focus:outline-none">
-            <p class="text-lg font-medium">How much money you got on you?</p>
-            <svg viewBox="0 0 24 24" class="w-3 text-gray-600 transition-transform duration-200 transform rotate-180">
-              <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="2,7 12,17 22,7" stroke-linejoin="round"></polyline>
-            </svg>
-          </button>
-          <!-- Show content if is open 
-          <div class="p-4 pt-0"><p class="text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.</p></div>
-          -->
+              <p class="mt-4 text-gray-400 font-normal leading-loose" data-config-id="a1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
+            </li>
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q2">Nunc maximus odio sit amet eros faucibus?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
+              <p class="hidden mt-4 text-gray-400 font-normal leading-loose" data-config-id="a2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
+            </li>
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q3">Nam feugiat ex eget sapien lobortis?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
+              <p class="hidden mt-4 text-gray-400 font-normal leading-loose" data-config-id="a3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
+            </li>
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q4">In hac habitasse platea dictumst?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
+              <p class="hidden mt-4 text-gray-400 font-normal leading-loose" data-config-id="a4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
+            </li>
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q5">Nullam congue lacinia nibh quis scelerisque?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
+              <p class="hidden mt-4 text-gray-400 font-normal leading-loose" data-config-id="a5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
+            </li>
+            <li class="p-6 bg-gray-50 rounded shadow">
+              <button class="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
+                <span class="text-xl" data-config-id="q6">Nam feugiat ex eget sapien lobortis?</span>
+                <svg class="w-4 h-4 text-pink-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
+              <p class="hidden mt-4 text-gray-400 font-normal leading-loose" data-config-id="a6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
+    <div class="skew skew-bottom mr-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none">
+        <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+      </svg>
+    </div>
+    <div class="skew skew-bottom ml-for-radius">
+      <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewbox="0 0 10 10" preserveaspectratio="none">
+        <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+      </svg>
+    </div>
+  </section>
 
 <div class="bg-gray-900">
   <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
